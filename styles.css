@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,900;1,600&display=swap');
 
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
 
 body,
 h1,
@@ -9,7 +13,53 @@ h1,
 header {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    box-shadow: 0 5px 5px rgb(207, 207, 207); 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+}
+
+h1 {
+    font-weight: 800;
+    color: rgb(255, 217, 0);
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-item {
+    color: rgb(255, 177, 8);
+}
+
+.menu-item:hover {
+    font-weight: 900;
+}
+
+.main-footer-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
 }
 
