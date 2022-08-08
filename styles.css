@@ -54,12 +54,54 @@ a {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 100px;
+    top: 120px;
     z-index: 1;
 }
 
 section {
     display: flex;
     flex-direction: row;
+}
+
+button {
+    background-color: rgb(255, 177, 8);
+    border: 0;
+    width: 150px;
+    height: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 40%;
+    color: white;
+}
+
+/*------------------------------ PRESENTATION----------------------------- */
+
+#presentation {
+    height: 80vh; /*550px*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    margin-left: 100px;
+}
+
+h2 {
+    color: rgba(0, 0, 0, 0.719);
+}
+
+#presentation img {
+    border: solid 1px;
+    width: 500px;
+    height: 500px;
+    margin-right: 100px;
+    border-radius: 50px;
+}
+
+#presentation .container {
+    font-size: 40px;
+    width: 40%;
 }
 
