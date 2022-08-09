@@ -74,7 +74,7 @@ button {
     color: white;
 }
 
-/*------------------------------ PRESENTATION----------------------------- */
+/*------------------------------ PRESENTATION-----------------------------*/
 
 #presentation {
     height: 80vh; /*550px*/
@@ -103,5 +103,24 @@ h2 {
 #presentation .container {
     font-size: 40px;
     width: 40%;
+}
+
+/*---------------------------------------FIRST SEPARATOR----------------------------------*/
+.separator {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.separator :first-child {
+    background-color: rgb(255, 177, 8);
+}
+
+.separator :nth-child(2) {
+    background-color: rgb(255, 210, 8);
+}
+
+.separator :nth-child(3) {
+    background-color: rgb(255, 217, 0);
 }
 
