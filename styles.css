@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,900;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;0,900;1,600&display=swap');
 
 * {
     font-family: 'Nunito Sans', sans-serif;
@@ -54,13 +54,13 @@ a {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 120px;
+    top: 110px;
     z-index: 1;
 }
 
 section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 button {
@@ -77,7 +77,7 @@ button {
 /*------------------------------ PRESENTATION-----------------------------*/
 
 #presentation {
-    height: 80vh; /*550px*/
+    height: 84vh; /*550px*/
     width: 100%;
     display: flex;
     align-items: center;
@@ -117,10 +117,38 @@ h2 {
 }
 
 .separator :nth-child(2) {
-    background-color: rgb(255, 210, 8);
+    background-color: rgb(250, 206, 11);
 }
 
 .separator :nth-child(3) {
     background-color: rgb(255, 217, 0);
 }
 
+/*--------------------------------------- PROFILE ----------------------------------*/
+
+#profile {
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile h2 {
+    font-size: 20px;
+    color: rgb(255, 177, 8);
+    font-weight: bold;
+}
+
+#profile h2,
+#profile p {
+    margin: 0;
+    width: 50%;
+    text-align: justify;
+}
+
+#profile p {
+    font-weight: 300;
+    font-size: 24px;
+    color: rgb(104, 104, 104);
+}
+
+/*--------------------------------------- EDUCATION & SKILLS ----------------------------------*/
