@@ -102,7 +102,7 @@ h2 {
 
 #presentation .container {
     font-size: 40px;
-    width: 40%;
+    max-width: 40%;
 }
 
 /*---------------------------------------FIRST SEPARATOR----------------------------------*/
@@ -124,6 +124,27 @@ h2 {
     background-color: rgb(255, 217, 0);
 }
 
+/*--------------------------------------- SECTIONS ----------------------------------*/
+
+.section-title {
+    font-size: 20px;
+    color: rgb(255, 177, 8);
+    font-weight: bold;
+}
+
+.section-title,
+.section-text {
+    margin: 0;
+    width: 50%;
+    text-align: justify;
+}
+
+.section-text {
+    font-weight: 300;
+    font-size: 24px;
+    color: rgb(104, 104, 104);
+}
+
 /*--------------------------------------- PROFILE ----------------------------------*/
 
 #profile {
@@ -132,23 +153,19 @@ h2 {
     align-items: center;
 }
 
-#profile h2 {
-    font-size: 20px;
-    color: rgb(255, 177, 8);
-    font-weight: bold;
+/*--------------------------------------- SKILLS ----------------------------------*/
+#skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
 }
 
-#profile h2,
-#profile p {
+#skills :first-child,
+#skills :nth-child(2) {
+    margin: auto;
+    border: solid 1px;
+}
+
+#skills ul {
     margin: 0;
-    width: 50%;
-    text-align: justify;
 }
-
-#profile p {
-    font-weight: 300;
-    font-size: 24px;
-    color: rgb(104, 104, 104);
-}
-
-/*--------------------------------------- EDUCATION & SKILLS ----------------------------------*/
