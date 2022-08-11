@@ -74,6 +74,11 @@ button {
     color: white;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 /*------------------------------ PRESENTATION-----------------------------*/
 
 #presentation {
@@ -157,15 +162,18 @@ h2 {
 #skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: start;
 }
 
-#skills :first-child,
-#skills :nth-child(2) {
-    margin: auto;
-    border: solid 1px;
+#skills > :first-child,
+#skills > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#skills h2,
 #skills ul {
-    margin: 0;
+    max-width: 260px;
 }
+
+/*--------------------------------------- SECOND SEPARATOR ----------------------------------*/
