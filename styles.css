@@ -210,12 +210,13 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 250px;
 }
 
 #education > :first-child,
 #education > :nth-child(2) {
-    padding-top: 1.5em;
-    padding-left: 1.5em;
+    padding-top: 3em;
+    padding-left: 2em;
 }
 
 #education > :first-child .section-title,
@@ -226,3 +227,6 @@ h2 {
 }
 
 /*-------------------------------------FOOTER-----------------------------------*/
+footer {
+    background-color: rgb(250, 206, 11);
+}
