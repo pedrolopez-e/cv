@@ -205,3 +205,24 @@ h2 {
 
 /*-------------------------------------EDUCATION & CERTIFICATES-----------------------------------*/
 
+#education {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#education > :first-child,
+#education > :nth-child(2) {
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+}
+
+#education > :first-child .section-title,
+#education > :first-child .section-text,
+#education > :nth-child(2) .section-title,
+#education > :nth-child(2) .section-text {
+    min-width: 100%;
+}
+
+/*-------------------------------------FOOTER-----------------------------------*/
