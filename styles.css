@@ -110,22 +110,25 @@ h2 {
     max-width: 40%;
 }
 
-/*---------------------------------------FIRST SEPARATOR----------------------------------*/
 .separator {
-    display: grid;
     height: 300px;
+}
+
+/*---------------------------------------FIRST SEPARATOR----------------------------------*/
+#first-separator {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.separator :first-child {
+#first-separator :first-child {
     background-color: rgb(255, 177, 8);
 }
 
-.separator :nth-child(2) {
+#first-separator :nth-child(2) {
     background-color: rgb(250, 206, 11);
 }
 
-.separator :nth-child(3) {
+#first-separator :nth-child(3) {
     background-color: rgb(255, 217, 0);
 }
 
@@ -162,6 +165,7 @@ h2 {
 #skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 2em;
 }
 
 #skills > :first-child,
@@ -177,3 +181,27 @@ h2 {
 }
 
 /*--------------------------------------- SECOND SEPARATOR ----------------------------------*/
+
+#second-separator {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.cell {
+    background-color: rgb(245, 245, 245);
+}
+
+.orange:hover {
+    background-color: rgb(255, 177, 8);
+}
+
+.orange-yellow:hover {
+    background-color: rgb(250, 206, 11);
+}
+
+.yellow:hover {
+    background-color: rgb(255, 217, 0);
+}
+
+/*-------------------------------------EDUCATION & CERTIFICATES-----------------------------------*/
+
